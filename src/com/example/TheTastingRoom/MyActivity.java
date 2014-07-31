@@ -19,7 +19,7 @@ public class MyActivity extends Activity {
     }
 
     public void startgame(View view) {
-        Intent intent = new Intent(this, Forecast.class);
+        Intent intent = new Intent(this, StartGame.class);
         startActivity(intent);
     }
 }
