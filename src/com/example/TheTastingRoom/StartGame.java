@@ -20,4 +20,7 @@ public class StartGame extends Activity {
         fragmentTransaction.replace(R.id.fragright, frr);
         fragmentTransaction.commit();
     }
+    @Override
+    public void onBackPressed() {
+    }
 }
