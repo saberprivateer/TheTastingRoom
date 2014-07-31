@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
     <RelativeLayout
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true" android:background="@drawable/leftsidebackground">
-        <TextView
+            android:layout_alignParentTop="true" android:background="@drawable/leftsidebackground"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/relativeLayout">
+    <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -16,15 +16,49 @@
                 android:id="@+id/textView"
                 android:layout_alignParentTop="true"
                 android:textColor="@android:color/white" android:background="@android:drawable/screen_background_dark_transparent"
-                android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:gravity="center"/>
+                android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:gravity="center"
+                android:clickable="false"/>
         <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="100dp"
                 android:layout_height="25dp"
                 android:id="@+id/progressBar"
-                android:visibility="visible" android:progress="33" android:layout_below="@+id/textView"
-                android:layout_alignParentStart="true" android:layout_marginLeft="46dp"
+                android:visibility="visible" android:progress="67" android:layout_below="@+id/textView"
                 android:layout_marginTop="87dp" android:background="@drawable/whitewine"
-                android:progressDrawable="@drawable/swish1" android:secondaryProgress="55"/>
-    </RelativeLayout>
+                android:layout_alignWithParentIfMissing="false" android:layout_alignEnd="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/cww_qty"
+                android:id="@+id/textView2"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/progressBar" android:layout_alignBottom="@+id/progressBar"
+                android:layout_marginBottom="2dp" android:layout_alignParentEnd="true"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:gravity="center_horizontal"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/cheapwhitebar"
+                android:layout_above="@+id/textView2" android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp" android:layout_alignBottom="@+id/progressBar"
+                android:contentDescription="@string/cheapwhitewine"/>
+    <ViewFlipper
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/viewFlipper" android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false" android:layout_alignParentRight="false"
+            android:layout_marginLeft="100dp" android:layout_marginRight="20dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" android:src="@drawable/bottom_forecast"
+                android:layout_marginLeft="211dp"
+                android:layout_alignBottom="@+id/viewFlipper" android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="false"/>
+    </ViewFlipper>
 </RelativeLayout>
