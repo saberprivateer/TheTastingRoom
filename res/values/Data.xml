@@ -1,3 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer name="money">100</integer>
+    <integer-array name="wineprices">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </integer-array>
+    <integer-array name="segmentdist">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="stock">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>10</item>
+    </integer-array>
 </resources>

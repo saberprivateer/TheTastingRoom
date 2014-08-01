@@ -23,4 +23,5 @@ public class MyActivity extends Activity {
         Intent intent = new Intent(this, StartGame.class);
         startActivity(intent);
     }
+
 }
