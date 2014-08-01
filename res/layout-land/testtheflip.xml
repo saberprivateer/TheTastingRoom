@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ViewFlipper
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/viewFlipper2" android:layout_row="7" android:layout_column="9"
+                android:layout_columnSpan="2">
+            <GridLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button"
+                        android:id="@+id/button" android:layout_row="12" android:layout_column="22"/>
+            </GridLayout>
+            <GridLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView" android:src="@drawable/leftsidebackground"/>
+            </GridLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Small Text"
+                        android:id="@+id/textView"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/textView2"/>
+            </LinearLayout>
+        </ViewFlipper>
+    </GridLayout>
+</LinearLayout>
