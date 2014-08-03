@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:id="@+id/llstockup">
     <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="150dp" android:background="@drawable/stockup">
@@ -12,7 +13,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Stock up on bottles for the season!"
-                android:id="@+id/textView"
+                android:id="@+id/stockupinfo"
+                android:textColor="#ffffffff"
                 android:background="@android:drawable/screen_background_dark_transparent" android:textSize="24dp"
                 android:textStyle="italic" android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"/>
@@ -49,6 +51,7 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="0dp"
+                    android:onClick="cww_click"
                     android:layout_height="fill_parent" android:gravity="center|top" android:layout_marginRight="10dp"
                     android:layout_weight="1" android:layout_gravity="top">
                 <TextView
@@ -56,6 +59,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="$5"
+                        android:textColor="#ffffffff"
                         android:id="@+id/textView5" android:gravity="top"
                         android:textSize="16dp" android:layout_marginBottom="8dp"/>
                 <ImageView
@@ -73,26 +77,31 @@
                         android:id="@+id/textView3" android:textColor="#ff9c9c9c" android:textSize="12dp"/>
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
-                          android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/linearLayout"
-                          android:layout_marginRight="20dp" android:layout_weight="1">
+                          android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/llsomewine"
+                          android:layout_marginRight="20dp" android:layout_weight="1"
+                          android:onClick="eww_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$10"
                           android:id="@+id/textView4" android:layout_marginBottom="8dp" android:gravity="top"
-                          android:textSize="16dp"/>
+                          android:textSize="16dp"
+                          android:textColor="#ffffffff"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
                            android:id="@+id/imageView3" android:src="@drawable/expensivewhite"
                            android:layout_marginBottom="10dp"/>
                 <TextView android:layout_width="100dp" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="Sauvignon Blanc"
+                          android:textColor="#ffffffff"
                           android:id="@+id/textView6" android:gravity="center_horizontal" android:textSize="12dp"/>
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
                           android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/linearLayout2"
-                          android:layout_marginRight="20dp" android:layout_weight="1">
+                          android:layout_marginRight="20dp" android:layout_weight="1"
+                          android:onClick="crw_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$10"
                           android:id="@+id/textView7" android:layout_marginBottom="8dp" android:gravity="top"
-                          android:textSize="16dp"/>
+                          android:textSize="16dp"
+                          android:textColor="#ffffffff"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
                            android:id="@+id/imageView4" android:src="@drawable/cheapred"
                            android:layout_marginBottom="10dp"/>
@@ -103,10 +112,12 @@
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
                           android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/linearLayout3"
-                          android:layout_weight="1">
+                          android:layout_weight="1" android:onClick="erw_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$15"
-                          android:id="@+id/textView9" android:layout_marginBottom="8dp" android:textSize="16dp"/>
+                          android:id="@+id/textView9"
+                          android:textColor="#ffffffff"
+                          android:layout_marginBottom="8dp" android:textSize="16dp"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
                            android:id="@+id/imageView5" android:src="@drawable/expensivered"
                            android:layout_marginBottom="10dp"/>
