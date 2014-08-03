@@ -1,27 +1,26 @@
 package com.example.TheTastingRoom;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
+import org.w3c.dom.Text;
 
 
 public class StartGame extends Activity {
     private ViewFlipper vf;
     public int money = 100;
+    public int[] btl_qty = null;
+    public int[] wineprice = null;
 
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragments);
+        setContentView(R.layout.gameframes);
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);
+        btl_qty=getResources().getIntArray(R.array.stock);
+        wineprice = getResources().getIntArray(R.array.wineprices);
     }
 
     public void flipit(View view) {
@@ -29,10 +28,14 @@ public class StartGame extends Activity {
     }
 
     public void cww_click(View view) {
+        if (money >= wineprice[0]) {
         money = money -5;
         TextView tv;
         tv = (TextView) findViewById(R.id.moneytxt);
         tv.setText("$"+Integer.toString(money));
+        btl_qty[0]=btl_qty[0]+1;
+        tv = (TextView) findViewById(R.id.cww_qty_tv);
+        tv.setText(Integer.toString(btl_qty[0])); }
     }
 
     public void eww_click(View view) {

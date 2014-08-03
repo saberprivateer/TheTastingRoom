@@ -14,8 +14,8 @@
     </integer-array>
     <integer-array name="stock">
         <item>10</item>
-        <item>20</item>
-        <item>30</item>
+        <item>10</item>
+        <item>10</item>
         <item>10</item>
     </integer-array>
 </resources>

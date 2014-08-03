@@ -11,8 +11,5 @@ import android.view.ViewGroup;
  * Created by dkamerling on 7/31/2014.
  */
 public class Inventory extends Fragment {
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.inventory, container, false);
-    }
+
 }

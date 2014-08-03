@@ -33,7 +33,7 @@
             android:id="@+id/bottle_qty_header"
             android:layout_alignParentEnd="true"
             android:gravity="center" android:layout_alignParentTop="false"
-            android:layout_marginTop="20dp" android:layout_below="@+id/moneytxt"/>
+            android:layout_marginTop="20dp" android:layout_below="@+id/moneytxt" android:textColor="#ffffffff"/>
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
               android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/eww_qty"
               android:id="@+id/eww_qty_tv"
