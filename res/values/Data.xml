@@ -4,8 +4,8 @@
     <integer-array name="wineprices">
         <item>5</item>
         <item>10</item>
+        <item>10</item>
         <item>15</item>
-        <item>20</item>
     </integer-array>
     <integer-array name="segmentdist">
         <item>10</item>

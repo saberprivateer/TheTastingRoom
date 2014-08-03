@@ -61,7 +61,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="$5"
                         android:textColor="#ffffffff"
-                        android:id="@+id/textView5" android:gravity="top"
+                        android:id="@+id/cww_price" android:gravity="top"
                         android:textSize="16dp" android:layout_marginBottom="8dp"/>
                 <ImageView
                         android:layout_width="100dp"
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Chardonnay"
-                        android:id="@+id/textView3" android:textColor="#ff9c9c9c" android:textSize="12dp"/>
+                        android:id="@+id/cww_desc" android:textColor="#ff9c9c9c" android:textSize="12dp"/>
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
                           android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/llsomewine"
@@ -83,7 +83,7 @@
                           android:onClick="eww_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$10"
-                          android:id="@+id/textView4" android:layout_marginBottom="8dp" android:gravity="top"
+                          android:id="@+id/eww_price" android:layout_marginBottom="8dp" android:gravity="top"
                           android:textSize="16dp"
                           android:textColor="#ffffffff"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
@@ -92,7 +92,7 @@
                 <TextView android:layout_width="100dp" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="Sauvignon Blanc"
                           android:textColor="#ffffffff"
-                          android:id="@+id/textView6" android:gravity="center_horizontal" android:textSize="12dp"/>
+                          android:id="@+id/ewr_desc" android:gravity="center_horizontal" android:textSize="12dp"/>
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
                           android:layout_height="fill_parent" android:gravity="center|top" android:id="@+id/linearLayout2"
@@ -100,7 +100,7 @@
                           android:onClick="crw_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$10"
-                          android:id="@+id/textView7" android:layout_marginBottom="8dp" android:gravity="top"
+                          android:id="@+id/crw_price" android:layout_marginBottom="8dp" android:gravity="top"
                           android:textSize="16dp"
                           android:textColor="#ffffffff"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
@@ -108,7 +108,7 @@
                            android:layout_marginBottom="10dp"/>
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="Merlot"
-                          android:id="@+id/textView8" android:textColor="@android:color/holo_red_light"
+                          android:id="@+id/crw_desc" android:textColor="@android:color/holo_red_light"
                           android:textSize="12dp"/>
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="0dp"
@@ -116,7 +116,7 @@
                           android:layout_weight="1" android:onClick="erw_click">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="$15"
-                          android:id="@+id/textView9"
+                          android:id="@+id/ewr_price"
                           android:textColor="#ffffffff"
                           android:layout_marginBottom="8dp" android:textSize="16dp"/>
                 <ImageView android:layout_width="100dp" android:layout_height="90dp"
@@ -124,7 +124,7 @@
                            android:layout_marginBottom="10dp"/>
                 <TextView android:layout_width="100dp" android:layout_height="wrap_content"
                           android:textAppearance="?android:attr/textAppearanceMedium" android:text="Cabernet Sauvignon"
-                          android:id="@+id/textView10" android:textColor="@android:color/holo_red_dark"
+                          android:id="@+id/erw_desc" android:textColor="@android:color/holo_red_dark"
                           android:gravity="center_horizontal" android:textSize="12dp"/>
             </LinearLayout>
         </LinearLayout>

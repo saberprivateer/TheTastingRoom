@@ -21,6 +21,9 @@ public class StartGame extends Activity {
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);
         btl_qty=getResources().getIntArray(R.array.stock);
         wineprice = getResources().getIntArray(R.array.wineprices);
+
+
+
     }
 
     public void flipit(View view) {
@@ -28,35 +31,33 @@ public class StartGame extends Activity {
     }
 
     public void cww_click(View view) {
-        if (money >= wineprice[0]) {
-        money = money -5;
-        TextView tv;
-        tv = (TextView) findViewById(R.id.moneytxt);
-        tv.setText("$"+Integer.toString(money));
-        btl_qty[0]=btl_qty[0]+1;
-        tv = (TextView) findViewById(R.id.cww_qty_tv);
-        tv.setText(Integer.toString(btl_qty[0])); }
+        TextView tv = (TextView) findViewById(R.id.cww_qty_tv);
+        updatestock(0,tv);
     }
 
     public void eww_click(View view) {
-        money = money -10;
-        TextView tv;
-        tv = (TextView) findViewById(R.id.moneytxt);
-        tv.setText("$"+Integer.toString(money));
+        TextView tv = (TextView) findViewById(R.id.eww_qty_tv);
+        updatestock(1,tv);
     }
 
     public void crw_click(View view) {
-        money = money -10;
-        TextView tv;
-        tv = (TextView) findViewById(R.id.moneytxt);
-        tv.setText("$"+Integer.toString(money));
+        TextView tv = (TextView) findViewById(R.id.crw_qty_tv);
+        updatestock(2,tv);
     }
 
     public void erw_click(View view) {
-        money = money -15;
-        TextView tv;
-        tv = (TextView) findViewById(R.id.moneytxt);
-        tv.setText("$"+Integer.toString(money));
+        TextView tv = (TextView) findViewById(R.id.erw_qty_tv);
+        updatestock(3,tv);
+    }
+
+    public void updatestock(int index, TextView wtv) {
+        if (money >= wineprice[index]) {
+            money = money - wineprice[index];
+            TextView tv;
+            tv = (TextView) findViewById(R.id.moneytxt);
+            tv.setText("$"+Integer.toString(money));
+            btl_qty[index]=btl_qty[index]+1;
+            wtv.setText(Integer.toString(btl_qty[index])); }
     }
 
     public boolean onTouchEvent(MotionEvent e) {
