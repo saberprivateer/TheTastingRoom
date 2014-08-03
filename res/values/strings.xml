@@ -4,4 +4,7 @@
     <string name="PlayerMoney">$100</string>
     <string name="cheapwhitewine">cheap white wine</string>
     <string name="cww_qty">10</string>
+    <string name="eww_qty">10</string>
+    <string name="crw_qty">10</string>
+    <string name="erw_qty">10</string>
 </resources>
