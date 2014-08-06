@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 import org.w3c.dom.Text;
+
+import java.util.Random;
 
 
 public class StartGame extends Activity {
@@ -14,6 +17,7 @@ public class StartGame extends Activity {
     public int money = 100;
     public int[] btl_qty = null;
     public int[] wineprice = null;
+    private Button invbutton;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,14 +25,38 @@ public class StartGame extends Activity {
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);
         btl_qty=getResources().getIntArray(R.array.stock);
         wineprice = getResources().getIntArray(R.array.wineprices);
-
-
-
+ //       SeasonForecast();
     }
 
-    public void flipit(View view) {
-     vf.showNext();
+    public void SeasonForecast() {
+        int[] array;
+
+        //Fisher-Yates Sort...sez the interwebs
+        array = getResources().getIntArray(R.array.segmentorder);
+        {
+            int index;
+            Random random = new Random();
+            for (int i = array.length - 1; i > 0; i--)
+            {
+                index = random.nextInt(i + 1);
+                if (index != i)
+                {
+                    array[index] ^= array[i];
+                    array[i] ^= array[index];
+                    array[index] ^= array[i];
+                }
+            }
+        }
+
+        TextView tv = (TextView) findViewById(R.id.segment1name);
+        tv.setText(getResources().getStringArray(R.array.segments)[array[0]]);
+        tv = (TextView) findViewById(R.id.segment2name);
+        tv.setText(getResources().getStringArray(R.array.segments)[array[1]]);
+        tv = (TextView) findViewById(R.id.segment3name);
+        tv.setText(getResources().getStringArray(R.array.segments)[array[2]]);
     }
+
+    //Buying wine functions
 
     public void cww_click(View view) {
         TextView tv = (TextView) findViewById(R.id.cww_qty_tv);
@@ -50,6 +78,8 @@ public class StartGame extends Activity {
         updatestock(3,tv);
     }
 
+    //Buying wine functions call this to add inventory
+
     public void updatestock(int index, TextView wtv) {
         if (money >= wineprice[index]) {
             money = money - wineprice[index];
@@ -60,13 +90,25 @@ public class StartGame extends Activity {
             wtv.setText(Integer.toString(btl_qty[index])); }
     }
 
-    public boolean onTouchEvent(MotionEvent e) {
-        switch (e.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-            {vf.showNext();}
-        }
-        return false;
+    //for flipping back and forth in forecast/stock phase
+
+    public void backtowine (View view) {
+        vf.setDisplayedChild(1);
     }
+
+    public void backtoforecast (View view) {
+        vf.setDisplayedChild(0);
+    }
+
+    //Kicks off the tasting room phase
+
+    public void SeasonStart (View view) {
+        invbutton = (Button) findViewById(R.id.invbutton);
+        invbutton.setVisibility(View.GONE);
+        vf.setDisplayedChild(2);
+    }
+
+
 
     @Override
     public void onBackPressed() {
