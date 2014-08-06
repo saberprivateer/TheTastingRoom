@@ -5,7 +5,7 @@
     <string name="cheapwhitewine">cheap white wine</string>
     <string name="Forecast2Stock">Stock up on wine...</string>
     <string-array name="segments">
-        <item>"Young Couple"</item>
+        <item>Young Couple</item>
         <item>Retired Couple</item>
         <item>Bachelorette Party</item>
     </string-array>

@@ -23,4 +23,10 @@
         <item>10</item>
         <item>10</item>
     </integer-array>
+    <integer-array name="tastingstock">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
 </resources>

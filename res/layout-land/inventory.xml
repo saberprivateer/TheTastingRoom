@@ -73,7 +73,8 @@
             android:layout_alignWithParentIfMissing="false"
             android:layout_alignTop="@+id/cww_qty_tv"
             android:layout_toLeftOf="@+id/cww_qty_tv" android:layout_marginRight="25dp"
-            android:layout_above="@+id/eww_qty_tv" android:layout_alignBottom="@+id/cww_qty_tv"/>
+            android:layout_above="@+id/eww_qty_tv" android:layout_alignBottom="@+id/cww_qty_tv"
+            android:onClick="servewine"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
@@ -81,7 +82,7 @@
             android:id="@+id/progress_eww" android:layout_alignTop="@+id/eww_qty_tv"
             android:layout_centerHorizontal="true" android:layout_alignLeft="@+id/progress_cww"
             android:layout_alignRight="@+id/progress_cww" android:layout_below="@+id/eww_qty_tv"
-            android:layout_alignBottom="@+id/eww_qty_tv" android:progress="0"/>
+            android:layout_alignBottom="@+id/eww_qty_tv" android:progress="0" android:onClick="servewine"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
@@ -89,15 +90,15 @@
             android:id="@+id/progress_crw" android:layout_alignTop="@+id/crw_qty_tv"
             android:layout_centerHorizontal="true" android:layout_alignBottom="@+id/crw_qty_tv"
             android:layout_alignLeft="@+id/progress_cww" android:layout_alignRight="@+id/progress_cww"
-            android:progress="0"/>
+            android:progress="0" android:onClick="servewine"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar"
+            android:id="@+id/progress_erw"
             android:layout_alignTop="@+id/erw_qty_tv" android:layout_centerHorizontal="true"
             android:layout_alignLeft="@+id/progress_cww" android:layout_alignRight="@+id/progress_cww"
-            android:layout_alignBottom="@+id/erw_qty_tv"/>
+            android:layout_alignBottom="@+id/erw_qty_tv" android:onClick="servewine"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
