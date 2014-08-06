@@ -4,7 +4,7 @@
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:onClick="flipit">
+        >
 
     <include layout="@layout/inventory"></include>
 
@@ -14,5 +14,6 @@
             android:id="@+id/viewFlipper">
         <include layout="@layout/forecast"/>
         <include layout="@layout/stockup" />
+        <include layout="@layout/tastingroom" />
     </ViewFlipper>
 </LinearLayout>
