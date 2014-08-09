@@ -9,4 +9,9 @@
         <item>Retired Couple</item>
         <item>Bachelorette Party</item>
     </string-array>
+    <string-array name="segmentimgs">
+        <item>@drawable/youngcouple</item>
+        <item>@drawable/retiredcouple</item>
+        <item>@drawable/bachaloretteparty</item>
+    </string-array>
 </resources>

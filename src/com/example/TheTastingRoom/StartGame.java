@@ -1,12 +1,12 @@
 package com.example.TheTastingRoom;
 
 import android.app.Activity;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
 import java.util.Random;
-
 
 public class StartGame extends Activity {
     private ViewFlipper vf;
@@ -16,6 +16,7 @@ public class StartGame extends Activity {
     public int[] tst_qty = null;
     private Button invbutton;
     public int service = 1;
+    public int guest = 1;
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -117,53 +118,70 @@ public class StartGame extends Activity {
         invbutton = (Button) findViewById(R.id.invbutton);
         invbutton.setVisibility(View.GONE);
         vf.setDisplayedChild(2);
-        TextView tv = (TextView) findViewById(R.id.segmentnametr);
-        tv.setText(getResources().getStringArray(R.array.segments)[0]);
 
+
+//        for (int i = 1; i<4; i++){
+            guest = rollsegment();
+            setguestpic(guest);
+
+//        }
     }
 
     public void servewine(View view) {
+        vf = (ViewFlipper) findViewById(R.id.viewFlipper);
+        int guestrating;
+        if (vf.getDisplayedChild()==2) {
 
-        if (service > 4) {
-            service = 1;
-            Button bt = (Button) findViewById(R.id.invbutton);
-            bt.setVisibility(View.VISIBLE);
-            setrb(1, 0);
-            setrb(2, 0);
-            setrb(3, 0);
-            setrb(4, 0);
-            service = 1;
+            if (service > 4) {
+                service = 1;
+                Button bt = (Button) findViewById(R.id.invbutton);
+                bt.setVisibility(View.VISIBLE);
+                setrb(1, 0);
+                setrb(2, 0);
+                setrb(3, 0);
+                setrb(4, 0);
+                service = 1;
+            }
+
+            switch (view.getId()) {
+                case R.id.progress_cww:
+                    if (tst_qty[0] > 0 || btl_qty[0] > 0) {
+                        guestrating = getguestrating(0);
+                        setrb(service, guestrating);
+                        openbottle(0);
+                        setchance(guestrating);
+                    }
+                    service = service + 1;
+                    break;
+                case R.id.progress_eww:
+                    if (tst_qty[1] > 0 || btl_qty[1] > 0) {
+                        guestrating = getguestrating(1);
+                        setrb(service, getguestrating(1));
+                        openbottle(1);
+                        setchance(guestrating);
+                    }
+                    service = service + 1;
+                    break;
+                case R.id.progress_crw:
+                    if (tst_qty[2] > 0 || btl_qty[2] > 0) {
+                        guestrating = getguestrating(2);
+                        setrb(service, getguestrating(2));
+                        openbottle(2);
+                        setchance(guestrating);
+                    }
+                    service = service + 1;
+                    break;
+                case R.id.progress_erw:
+                    if (tst_qty[3] > 0 || btl_qty[3] > 0) {
+                        guestrating = getguestrating(3);
+                        setrb(service, getguestrating(3));
+                        openbottle(3);
+                        setchance(guestrating);
+                    }
+                    service = service + 1;
+                    break;
+            }
         }
-
-        switch (view.getId()) {
-            case R.id.progress_cww:
-                if (tst_qty[0] > 0 || btl_qty[0] > 0) {
-                    setrb(service, 1);
-                    openbottle(0);
-                }
-                break;
-            case R.id.progress_eww:
-                if (tst_qty[1] > 0 || btl_qty[1] > 0) {
-                    setrb(service, 2);
-                    openbottle(1);
-                }
-                break;
-            case R.id.progress_crw:
-                if (tst_qty[2] > 0 || btl_qty[2] > 0) {
-                    setrb(service, 3);
-                    openbottle(2);
-                }
-                break;
-            case R.id.progress_erw:
-                if (tst_qty[3] > 0 || btl_qty[3] > 0) {
-                    setrb(service, 4);
-                    openbottle(3);
-                }
-                break;
-        }
-        service = service + 1;
-
-
     }
 
     public void setrb(int selectrb, int stars) {
@@ -188,6 +206,7 @@ public class StartGame extends Activity {
 
     }
 
+    //Opens a bottle of wine for tasting
     public void openbottle(int wine) {
         switch (wine) {
             case 0:
@@ -247,6 +266,56 @@ public class StartGame extends Activity {
                 }
 
         }
+    }
+
+    public int rollsegment() {
+        int[] segdist;
+        Random rnd = new Random();
+        segdist = getResources().getIntArray(R.array.segmentdist);
+        int roll = rnd.nextInt(100);
+  //      TextView tv = (TextView) findViewById(R.id.testdarnd);
+  //      tv.setText(Integer.toString(roll));
+        if (roll<=segdist[0]) {return 0;}
+        if (roll<=(segdist[0]+segdist[1])) {return 1;}
+        return 2;
+    }
+
+    public void setguestpic(int guest) {
+        TextView tv = (TextView) findViewById(R.id.segmentnametr);
+        tv.setText(getResources().getStringArray(R.array.segments)[guest]);
+        ImageView iv = (ImageView) findViewById(R.id.segmentpictr);
+        TypedArray imgs = getResources().obtainTypedArray(R.array.segmentimgs);
+        iv.setBackgroundResource(imgs.getResourceId(guest,-1));
+        imgs.recycle();
+    }
+
+    public int getguestrating(int wine) {
+        int rating;
+        int [] pref = null;
+        switch(guest) {
+            case 0:
+            pref = getResources().getIntArray(R.array.seg1pref);
+                break;
+            case 1:
+                pref = getResources().getIntArray(R.array.seg2pref);
+                break;
+            case 2:
+                pref = getResources().getIntArray(R.array.seg3pref);
+                break;
+
+        }
+
+        Random rnd = new Random();
+        rating = rnd.nextInt(5)+1;
+        if (rating>pref[wine]) {rating = pref[wine];}
+        return rating;
+    }
+
+    public void setchance(int guestrating) {
+        int cp;
+        ProgressBar bc = (ProgressBar) findViewById(R.id.bottlechance);
+        cp = bc.getProgress();
+        bc.setProgress((guestrating/5)*25+cp);
     }
 
     @Override

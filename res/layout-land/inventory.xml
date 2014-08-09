@@ -82,7 +82,8 @@
             android:id="@+id/progress_eww" android:layout_alignTop="@+id/eww_qty_tv"
             android:layout_centerHorizontal="true" android:layout_alignLeft="@+id/progress_cww"
             android:layout_alignRight="@+id/progress_cww" android:layout_below="@+id/eww_qty_tv"
-            android:layout_alignBottom="@+id/eww_qty_tv" android:progress="0" android:onClick="servewine"/>
+            android:layout_alignBottom="@+id/eww_qty_tv" android:progress="0" android:onClick="servewine"
+            android:clickable="false"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
