@@ -75,15 +75,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08b170d-05aa-4b90-ad41-ce3d9e411066" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-land/results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/Data.xml" afterPath="$PROJECT_DIR$/res/values/Data.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Forecast.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Forecast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Inventory.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Inventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/inventory.xml" afterPath="$PROJECT_DIR$/res/layout-land/inventory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/tastingroom.xml" afterPath="$PROJECT_DIR$/res/layout-land/tastingroom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheTastingRoom.iws" />
@@ -123,8 +114,8 @@
       <file leaf-file-name="StartGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9028476" vertical-offset="1025" max-vertical-offset="2278">
-              <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.44723618" vertical-offset="1025" max-vertical-offset="2278">
+              <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
@@ -766,7 +757,11 @@
       <created>1407601509776</created>
       <updated>1407601509776</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="FULL GAME LOOP COMPLETE!">
+      <created>1407920105911</created>
+      <updated>1407920105911</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -830,7 +825,8 @@
     <MESSAGE value="clean up and adding transitions to tastingroom" />
     <MESSAGE value="creating some logic for open bottles for tasting." />
     <MESSAGE value="so many game loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="so many game loops" />
+    <MESSAGE value="FULL GAME LOOP COMPLETE!" />
+    <option name="LAST_COMMIT_MESSAGE" value="FULL GAME LOOP COMPLETE!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1368,8 +1364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9028476" vertical-offset="1025" max-vertical-offset="2278">
-          <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.44723618" vertical-offset="1025" max-vertical-offset="2278">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
