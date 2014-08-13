@@ -10,6 +10,6 @@ import android.view.ViewGroup;
 /**
  * Created by dkamerling on 7/31/2014.
  */
-public class Inventory extends Fragment {
+public class Inventory {
 
 }

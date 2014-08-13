@@ -23,12 +23,6 @@
         <item>10</item>
         <item>10</item>
     </integer-array>
-    <integer-array name="tastingstock">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
     <integer-array name="seg1pref">
         <item>4</item>
         <item>5</item>
