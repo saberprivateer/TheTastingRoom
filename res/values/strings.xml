@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TheTastingRoom</string>
+    <string name="app_name">The Tasting Room</string>
     <string name="PlayerMoney">$100</string>
     <string name="cheapwhitewine">cheap white wine</string>
     <string name="Forecast2Stock">Stock up on wine...</string>
+    <string name="congratstext">Congrats! You ended the season with $</string>
     <string-array name="segments">
-        <item>"Young Couple"</item>
+        <item>Young Couple</item>
         <item>Retired Couple</item>
         <item>Bachelorette Party</item>
+    </string-array>
+    <string-array name="segmentimgs">
+        <item>@drawable/youngcouple</item>
+        <item>@drawable/retiredcouple</item>
+        <item>@drawable/bachaloretteparty</item>
     </string-array>
 </resources>

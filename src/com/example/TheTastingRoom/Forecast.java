@@ -13,7 +13,7 @@ import android.widget.ViewFlipper;
 /**
  * Created by dkamerling on 7/30/2014.
  */
-    public class Forecast extends Fragment {
+    public class Forecast {
 
 }
 

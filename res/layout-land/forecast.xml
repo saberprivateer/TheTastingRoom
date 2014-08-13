@@ -83,7 +83,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sample Text"
+                            android:text="Young Couple"
                             android:id="@+id/segment1name" android:textSize="12dp" android:layout_gravity="center_horizontal"
                             android:gravity="center_horizontal" android:layout_weight="0.09"
                             android:textIsSelectable="false" android:textColor="#ffffffff" android:autoText="false"
@@ -109,7 +109,7 @@
                         </LinearLayout>
                     </LinearLayout>
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                              android:text="Sample Text"
+                              android:text="Retired Couple"
                               android:id="@+id/segment2name" android:textSize="12dp" android:layout_gravity="center_horizontal"
                               android:gravity="center_horizontal" android:layout_weight="0.09"
                               android:textColor="#ffffffff"
@@ -135,7 +135,7 @@
                         </LinearLayout>
                     </LinearLayout>
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                              android:text="Sample Text"
+                              android:text="Bachelorette Party"
                               android:id="@+id/segment3name" android:textSize="12dp" android:layout_gravity="center_horizontal"
                               android:gravity="center_horizontal" android:layout_weight="0.09"
                               android:textColor="#ffffffff"
