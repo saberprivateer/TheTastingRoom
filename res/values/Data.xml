@@ -7,6 +7,13 @@
         <item>10</item>
         <item>15</item>
     </integer-array>
+    <integer-array name="winesell">
+        <item>20</item>
+        <item>30</item>
+        <item>35</item>
+        <item>45</item>
+    </integer-array>
+
     <integer-array name="segmentdist">
         <item>50</item>
         <item>30</item>
@@ -17,12 +24,14 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
+
     <integer-array name="stock">
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
     </integer-array>
+
     <integer-array name="seg1pref">
         <item>4</item>
         <item>5</item>
@@ -41,4 +50,11 @@
         <item>4</item>
         <item>5</item>
     </integer-array>
+
+    <integer-array name="segcash">
+        <item>35</item>
+        <item>45</item>
+        <item>30</item>
+    </integer-array>
+
 </resources>

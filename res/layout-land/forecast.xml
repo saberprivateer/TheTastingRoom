@@ -52,94 +52,79 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" android:layout_weight="1"
                         android:id="@+id/llseg1" android:background="@drawable/youngcouple">
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp" android:layout_gravity="top" android:layout_weight="1"
-                            android:baselineAligned="false">
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
                         <ImageView
                                 android:layout_width="50dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="50dp"
                                 android:id="@+id/forecast1"
-                                android:src="@drawable/wood_arrow_progressive" android:layout_marginBottom="40dp"/>
-                        <LinearLayout
-                                android:orientation="vertical"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content" android:layout_weight="1">
-                            <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:id="@+id/segment1wine1" android:src="@drawable/rightwood"/>
-                            <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:id="@+id/segment1wine2" android:src="@drawable/rightwood"/>
-                            <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="40dp"
-                                    android:id="@+id/segment1wine3" android:src="@drawable/rightwood"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Young Couple"
-                            android:id="@+id/segment1name" android:textSize="12dp" android:layout_gravity="center_horizontal"
-                            android:gravity="center_horizontal" android:layout_weight="0.09"
-                            android:textIsSelectable="false" android:textColor="#ffffffff" android:autoText="false"
-                            android:background="@android:drawable/screen_background_dark_transparent"/>
+                                android:src="@drawable/wood_arrow_progressive"
+                                android:layout_above="@+id/segment1name" android:layout_alignParentEnd="true"
+                                android:background="@android:drawable/screen_background_dark_transparent"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Young Couple"
+                                android:id="@+id/segment1name" android:textSize="12dp" android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textIsSelectable="false" android:textColor="#ffffffff" android:autoText="false"
+                                android:background="@android:drawable/screen_background_dark_transparent"
+                                android:layout_alignParentBottom="true"/>
+                        <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView2" android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true" android:background="@drawable/redoverwhite"/>
+                    </RelativeLayout>
                 </LinearLayout>
                 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
                               android:layout_height="fill_parent" android:layout_weight="1" android:id="@+id/llseg2"
                               android:background="@drawable/retiredcouple">
-                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
-                                  android:layout_height="0dp" android:layout_gravity="top" android:layout_weight="1"
-                                  android:baselineAligned="false">
-                        <ImageView android:layout_width="50dp" android:layout_height="wrap_content"
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                        <ImageView android:layout_width="50dp" android:layout_height="50dp"
                                    android:id="@+id/forecast2" android:src="@drawable/wood_arrow_progressive"
-                                   android:layout_marginBottom="40dp"/>
-                        <LinearLayout android:orientation="vertical" android:layout_width="0dp"
-                                      android:layout_height="wrap_content" android:layout_weight="1">
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segment2wine1" android:src="@drawable/rightwood"/>
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segmen2wine2" android:src="@drawable/rightwood"/>
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segment2wine2" android:src="@drawable/rightwood"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                              android:text="Retired Couple"
-                              android:id="@+id/segment2name" android:textSize="12dp" android:layout_gravity="center_horizontal"
-                              android:gravity="center_horizontal" android:layout_weight="0.09"
-                              android:textColor="#ffffffff"
-                              android:background="@android:drawable/screen_background_dark_transparent"/>
+                                   android:layout_above="@+id/segment2name" android:layout_alignParentEnd="true"
+                                   android:background="@android:drawable/screen_background_dark_transparent"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="Retired Couple"
+                                  android:id="@+id/segment2name" android:textSize="12dp" android:layout_gravity="center_horizontal"
+                                  android:gravity="center_horizontal"
+                                  android:textColor="#ffffffff"
+                                  android:background="@android:drawable/screen_background_dark_transparent"
+                                  android:layout_alignParentBottom="true"/>
+                        <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView" android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true" android:background="@drawable/redorwhite"/>
+                    </RelativeLayout>
                 </LinearLayout>
-                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
                               android:layout_height="fill_parent" android:layout_weight="1" android:id="@+id/llseg3"
                               android:background="@drawable/bachaloretteparty">
-                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
-                                  android:layout_height="0dp" android:layout_gravity="top" android:layout_weight="1"
-                                  android:baselineAligned="false">
-                        <ImageView android:layout_width="50dp" android:layout_height="wrap_content"
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" android:background="@drawable/bachaloretteparty"
+                            >
+                        <ImageView android:layout_width="50dp" android:layout_height="50dp"
                                    android:id="@+id/forecast3" android:src="@drawable/wood_arrow_progressive"
-                                   android:layout_marginBottom="40dp"/>
-                        <LinearLayout android:orientation="vertical" android:layout_width="0dp"
-                                      android:layout_height="wrap_content" android:layout_weight="1">
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segment3wine1" android:src="@drawable/rightwood"/>
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segment3wine2" android:src="@drawable/rightwood"/>
-                            <ImageView android:layout_width="wrap_content" android:layout_height="40dp"
-                                       android:id="@+id/segment3wine3" android:src="@drawable/rightwood"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                              android:text="Bachelorette Party"
-                              android:id="@+id/segment3name" android:textSize="12dp" android:layout_gravity="center_horizontal"
-                              android:gravity="center_horizontal" android:layout_weight="0.09"
-                              android:textColor="#ffffffff"
-                              android:background="@android:drawable/screen_background_dark_transparent"/>
+                                   android:layout_above="@+id/segment3name" android:layout_alignParentEnd="true"
+                                   android:background="@android:drawable/screen_background_dark_transparent"/>
+                        <ImageView android:layout_width="40dp" android:layout_height="30dp"
+                                   android:id="@+id/segment3wine1" android:background="@drawable/whiteoverred"
+                                   android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                                   android:layout_alignParentRight="true"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="Bachelorette Party"
+                                  android:id="@+id/segment3name" android:textSize="12dp" android:layout_gravity="center_horizontal"
+                                  android:gravity="center_horizontal"
+                                  android:textColor="#ffffffff"
+                                  android:background="@android:drawable/screen_background_dark_transparent"
+                                  android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
