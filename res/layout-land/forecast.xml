@@ -30,7 +30,7 @@
                     >
                 <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         android:id="@+id/forecastdirection"
                         android:src="@drawable/leftwood"
                         android:layout_gravity="right" android:contentDescription="SlideIndicator"/>
@@ -41,7 +41,8 @@
                         android:text="@string/Forecast2Stock"
                         android:id="@+id/gettocellar"
 
-                        android:layout_gravity="center_vertical" android:textColor="@android:color/holo_orange_dark"/>
+                        android:layout_gravity="center_vertical" android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="16dp"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="horizontal"
