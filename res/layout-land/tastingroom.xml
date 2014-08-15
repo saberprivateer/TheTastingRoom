@@ -91,7 +91,8 @@
                 android:id="@+id/bottlechance"
                 android:layout_alignStart="@+id/segmentpictr" android:layout_alignLeft="@+id/segmentpictr"
                 android:layout_alignRight="@+id/segmentpictr" android:layout_below="@+id/segmentpictr"
-                android:layout_marginTop="15dp" android:indeterminate="false"/>
+                android:layout_marginTop="15dp" android:indeterminate="false"
+                />
     </RelativeLayout>
 </LinearLayout>
     </merge>

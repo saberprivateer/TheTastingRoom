@@ -15,4 +15,10 @@
         <item>@drawable/retiredcouple</item>
         <item>@drawable/bachaloretteparty</item>
     </string-array>
+    <string-array name="wines">
+        <item>Chardonnay</item>
+        <item>Sauvignon Blanc</item>
+        <item>Merlot</item>
+        <item>Cabernet Sauvignon</item>
+    </string-array>
 </resources>

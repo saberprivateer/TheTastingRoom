@@ -56,25 +56,26 @@
               android:layout_alignParentEnd="true" android:layout_below="@+id/crw_qty_tv"
               android:layout_marginTop="40dp"/>
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:id="@+id/cww_inv"
-            android:src="@drawable/cheapwhitebar"
-            android:layout_above="@+id/progress_cww" android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp" android:layout_alignBottom="@+id/progress_cww"
-            android:contentDescription="@string/cheapwhitewine"/>
+            android:src="@drawable/cheapwhite"
+            android:contentDescription="@string/cheapwhitewine"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:layout_alignBottom="@+id/progress_cww" android:layout_alignParentStart="true"
+            android:layout_marginBottom="-12.5dp"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/progress_cww"
-            android:visibility="visible" android:progress="0"
-            android:background="@drawable/whitewine"
+            android:visibility="visible"
             android:layout_alignWithParentIfMissing="false"
             android:layout_alignTop="@+id/cww_qty_tv"
             android:layout_toLeftOf="@+id/cww_qty_tv" android:layout_marginRight="25dp"
             android:layout_above="@+id/eww_qty_tv" android:layout_alignBottom="@+id/cww_qty_tv"
-            android:onClick="servewine"/>
+            android:onClick="servewine" android:progressDrawable="@drawable/whiteprogress"
+            android:indeterminate="false" android:progress="0"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
@@ -83,7 +84,7 @@
             android:layout_centerHorizontal="true" android:layout_alignLeft="@+id/progress_cww"
             android:layout_alignRight="@+id/progress_cww" android:layout_below="@+id/eww_qty_tv"
             android:layout_alignBottom="@+id/eww_qty_tv" android:progress="0" android:onClick="servewine"
-            android:clickable="false"/>
+            android:clickable="false" android:progressDrawable="@drawable/whiteprogress"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
@@ -91,7 +92,8 @@
             android:id="@+id/progress_crw" android:layout_alignTop="@+id/crw_qty_tv"
             android:layout_centerHorizontal="true" android:layout_alignBottom="@+id/crw_qty_tv"
             android:layout_alignLeft="@+id/progress_cww" android:layout_alignRight="@+id/progress_cww"
-            android:progress="0" android:onClick="servewine"/>
+            android:progress="0" android:onClick="servewine" android:progressDrawable="@drawable/redprogress"
+            android:indeterminate="false"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
@@ -99,12 +101,43 @@
             android:id="@+id/progress_erw"
             android:layout_alignTop="@+id/erw_qty_tv" android:layout_centerHorizontal="true"
             android:layout_alignLeft="@+id/progress_cww" android:layout_alignRight="@+id/progress_cww"
-            android:layout_alignBottom="@+id/erw_qty_tv" android:onClick="servewine"/>
+            android:layout_alignBottom="@+id/erw_qty_tv" android:onClick="servewine"
+            android:progressDrawable="@drawable/redprogress"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start Season!"
             android:id="@+id/invbutton" android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:onClick="actionbutton"/>
+            android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:onClick="actionbutton"
+            />
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView" android:layout_alignBottom="@+id/progress_eww"
+            android:layout_alignParentStart="true" android:src="@drawable/expensivewhite"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:layout_marginBottom="-12.5dp"/>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2" android:layout_alignBottom="@+id/progress_crw"
+            android:layout_alignParentStart="true"
+            android:background="@android:drawable/screen_background_dark_transparent" android:src="@drawable/cheapred"
+            android:layout_marginBottom="-12.5dp"/>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView3" android:layout_alignBottom="@+id/progress_erw"
+            android:layout_alignParentStart="true"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:src="@drawable/expensivered" android:layout_marginBottom="-12.5dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Open Bottles"
+            android:id="@+id/textView"
+            android:textColor="#ffffffff" android:background="@android:drawable/screen_background_dark_transparent"
+            android:layout_alignTop="@+id/bottle_qty_header" android:layout_centerHorizontal="true"/>
 </RelativeLayout>
 </merge>

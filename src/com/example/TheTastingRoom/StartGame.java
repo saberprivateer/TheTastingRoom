@@ -3,11 +3,11 @@ package com.example.TheTastingRoom;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
+import com.example.TheTastingRoom.TastingRoom;
 
 import java.util.Random;
 
@@ -17,6 +17,7 @@ public class StartGame extends Activity {
     public int[] btl_qty = {0, 0, 0, 0};
     public int[] wineprice = {0, 0, 0, 0};
     public int[] tst_qty = {0, 0, 0, 0};
+    public int[] sellprice = {0,0,0,0};
     private Button invbutton;
     public int service = 1;
     public int guest = 1;
@@ -29,11 +30,49 @@ public class StartGame extends Activity {
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);
         btl_qty = getResources().getIntArray(R.array.stock);
         wineprice = getResources().getIntArray(R.array.wineprices);
+        sellprice = getResources().getIntArray(R.array.winesell);
+        invinit();
+        stockinit();
+        priceinit();
         //       SeasonForecast();
         //       forecastinit();
     }
 
     //Temp init till I decide about how to randomize
+
+    public void invinit() {
+        TextView tv = (TextView) findViewById(R.id.cww_qty_tv);
+        tv.setText(Integer.toString(btl_qty[0]));
+        tv = (TextView) findViewById(R.id.eww_qty_tv);
+        tv.setText(Integer.toString(btl_qty[1]));
+        tv = (TextView) findViewById(R.id.crw_qty_tv);
+        tv.setText(Integer.toString(btl_qty[2]));
+        tv = (TextView) findViewById(R.id.erw_qty_tv);
+        tv.setText(Integer.toString(btl_qty[3]));
+    }
+
+    //Initialize the wine prices
+    public void stockinit() {
+        TextView tv = (TextView) findViewById(R.id.cwwsell);
+        tv.setText(Integer.toString(sellprice[0]));
+        tv = (TextView) findViewById(R.id.ewwsell);
+        tv.setText(Integer.toString(sellprice[1]));
+        tv = (TextView) findViewById(R.id.crwsell);
+        tv.setText(Integer.toString(sellprice[2]));
+        tv = (TextView) findViewById(R.id.erwsell);
+        tv.setText(Integer.toString(sellprice[3]));
+    }
+
+    public void priceinit() {
+        TextView tv = (TextView) findViewById(R.id.cww_price);
+        tv.setText(Integer.toString(wineprice[0]));
+        tv = (TextView) findViewById(R.id.eww_price);
+        tv.setText(Integer.toString(wineprice[1]));
+        tv = (TextView) findViewById(R.id.crw_price);
+        tv.setText(Integer.toString(wineprice[2]));
+        tv = (TextView) findViewById(R.id.erw_price);
+        tv.setText(Integer.toString(wineprice[3]));
+    }
 
     public void forecastinit() {
         TextView tv = (TextView) findViewById(R.id.segment1name);
@@ -105,6 +144,18 @@ public class StartGame extends Activity {
         }
     }
 
+    //For selling back a bottle...easy game
+    public void sellbackstock(int index, TextView wtv) {
+        if (btl_qty[index] > 0) {
+            money = money + wineprice[index];
+            TextView tv;
+            tv = (TextView) findViewById(R.id.moneytxt);
+            tv.setText("$" + Integer.toString(money));
+            btl_qty[index] = btl_qty[index] - 1;
+            wtv.setText(Integer.toString(btl_qty[index]));
+        }
+    }
+
     //for flipping back and forth in forecast/stock phase
     public void backtowine(View view) {
         vf.setDisplayedChild(1);
@@ -145,20 +196,54 @@ public class StartGame extends Activity {
                     }
                 })
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        recreate();
-                    }
-                }
+                            public void onClick(DialogInterface dialog, int id) {
+                                recreate();
+                            }
+                        }
 
-    );
-    AlertDialog alert = builder.create();
-    alert.show();
-}
+                );
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    public void outofstock(String wine) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Sorry, you ran out of " + wine)
+                .setCancelable(false)
+                .setPositiveButton("Back", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+
+                            }
+                        }
+                );
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 
     public void servewine(View view) {
         vf = (ViewFlipper) findViewById(R.id.viewFlipper);
         int guestrating;
-        if (vf.getDisplayedChild() == 2 && service<5) {
+        if (vf.getDisplayedChild() == 1) {
+            switch (view.getId()) {
+                case R.id.progress_cww:
+                    TextView tv = (TextView) findViewById(R.id.cww_qty_tv);
+                    sellbackstock(0, tv);
+                    break;
+                case R.id.progress_eww:
+                    tv = (TextView) findViewById(R.id.eww_qty_tv);
+                    sellbackstock(1, tv);
+                    break;
+                case R.id.progress_crw:
+                    tv = (TextView) findViewById(R.id.crw_qty_tv);
+                    sellbackstock(2, tv);
+                    break;
+                case R.id.progress_erw:
+                    tv = (TextView) findViewById(R.id.erw_qty_tv);
+                    sellbackstock(3, tv);
+                    break;
+            }
+        }
+        if (vf.getDisplayedChild() == 2 && service < 5) {
             switch (view.getId()) {
                 case R.id.progress_cww:
                     if (tst_qty[0] > 0 || btl_qty[0] > 0) {
@@ -166,8 +251,11 @@ public class StartGame extends Activity {
                         setrb(service, guestrating);
                         openbottle(0);
                         setchance(guestrating);
+                        service = service + 1;
+                    } else {
+                        outofstock(getResources().getStringArray(R.array.wines)[0]);
                     }
-                    service = service + 1;
+
                     break;
                 case R.id.progress_eww:
                     if (tst_qty[1] > 0 || btl_qty[1] > 0) {
@@ -175,8 +263,11 @@ public class StartGame extends Activity {
                         setrb(service, guestrating);
                         openbottle(1);
                         setchance(guestrating);
+                        service = service + 1;
+                    } else {
+                        outofstock(getResources().getStringArray(R.array.wines)[1]);
                     }
-                    service = service + 1;
+
                     break;
                 case R.id.progress_crw:
                     if (tst_qty[2] > 0 || btl_qty[2] > 0) {
@@ -184,8 +275,10 @@ public class StartGame extends Activity {
                         setrb(service, guestrating);
                         openbottle(2);
                         setchance(guestrating);
+                        service = service + 1;
+                    } else {
+                        outofstock(getResources().getStringArray(R.array.wines)[2]);
                     }
-                    service = service + 1;
                     break;
                 case R.id.progress_erw:
                     if (tst_qty[3] > 0 || btl_qty[3] > 0) {
@@ -193,8 +286,10 @@ public class StartGame extends Activity {
                         setrb(service, guestrating);
                         openbottle(3);
                         setchance(guestrating);
+                        service = service + 1;
+                    } else {
+                        outofstock(getResources().getStringArray(R.array.wines)[3]);
                     }
-                    service = service + 1;
                     break;
             }
             if (service > 4) {
@@ -234,16 +329,18 @@ public class StartGame extends Activity {
         String resultmessage;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if (roll < bc.getProgress()) {
-            money = money + 60;
+            money = money + getResources().getIntArray(R.array.segcash)[guest];
             resultmessage = "They bought a bottle!";
         } else {
-            money = money + 20;
+            money = money + 10;
             resultmessage = "They didn't buy a bottle.";
         }
         final String buttonsez;
-        if (guestqty ==3){
+        if (guestqty == 3) {
             buttonsez = "End Season";
-        } else {buttonsez = "Next Guest";}
+        } else {
+            buttonsez = "Next Guest";
+        }
 
         builder.setMessage(resultmessage)
                 .setCancelable(false)
@@ -284,8 +381,8 @@ public class StartGame extends Activity {
                     btl_qty[wine] = btl_qty[wine] - 1;
                     TextView tv = (TextView) findViewById(R.id.cww_qty_tv);
                     tv.setText(Integer.toString(btl_qty[wine]));
-                    tst_qty[wine] = 100;
-                    pb.setProgress(100);
+                    tst_qty[wine] = 75;
+                    pb.setProgress(75);
                 } else {
                     tst_qty[wine] = tst_qty[wine] - 25;
                     pb.setProgress(tst_qty[wine]);
@@ -298,8 +395,8 @@ public class StartGame extends Activity {
                     btl_qty[wine] = btl_qty[wine] - 1;
                     TextView tv = (TextView) findViewById(R.id.eww_qty_tv);
                     tv.setText(Integer.toString(btl_qty[wine]));
-                    tst_qty[wine] = 100;
-                    pb.setProgress(100);
+                    tst_qty[wine] = 75;
+                    pb.setProgress(75);
                 } else {
                     tst_qty[wine] = tst_qty[wine] - 25;
                     pb.setProgress(tst_qty[wine]);
@@ -312,8 +409,8 @@ public class StartGame extends Activity {
                     btl_qty[wine] = btl_qty[wine] - 1;
                     TextView tv = (TextView) findViewById(R.id.crw_qty_tv);
                     tv.setText(Integer.toString(btl_qty[wine]));
-                    tst_qty[wine] = 100;
-                    pb.setProgress(100);
+                    tst_qty[wine] = 75;
+                    pb.setProgress(75);
                 } else {
                     tst_qty[wine] = tst_qty[wine] - 25;
                     pb.setProgress(tst_qty[wine]);
@@ -326,8 +423,8 @@ public class StartGame extends Activity {
                     btl_qty[wine] = btl_qty[wine] - 1;
                     TextView tv = (TextView) findViewById(R.id.erw_qty_tv);
                     tv.setText(Integer.toString(btl_qty[wine]));
-                    tst_qty[wine] = 100;
-                    pb.setProgress(100);
+                    tst_qty[wine] = 75;
+                    pb.setProgress(75);
                 } else {
                     tst_qty[wine] = tst_qty[wine] - 25;
                     pb.setProgress(tst_qty[wine]);
@@ -359,11 +456,14 @@ public class StartGame extends Activity {
         TypedArray imgs = getResources().obtainTypedArray(R.array.segmentimgs);
         iv.setBackgroundResource(imgs.getResourceId(guest, -1));
         imgs.recycle();
+        tv = (TextView) findViewById(R.id.budget);
+        tv.setText("$"+Integer.toString(getResources().getIntArray(R.array.segcash)[guest]));
     }
 
     //Determines how much the guests like a bottle of wine
     public int getguestrating(int wine) {
-        int rating;
+        int rating = 0;
+        Random rnd = new Random();
         int[] pref = {5, 5, 5, 5};
         switch (guest) {
             case 0:
@@ -378,12 +478,26 @@ public class StartGame extends Activity {
 
         }
 
-        Random rnd = new Random();
-        rating = rnd.nextInt(5) + 1;
+        switch (wine) {
+            case 0:
+                rating = rnd.nextInt(5) + 1;
+                break;
+            case 1:
+                rating = rnd.nextInt(5) + 2;
+                break;
+            case 2:
+                rating = rnd.nextInt(5) + 1;
+                break;
+            case 3:
+                rating = rnd.nextInt(5) + 3;
+                break;
+        }
+
         if (rating > pref[wine]) {
             rating = pref[wine];
         }
         return rating;
+
     }
 
     //Updates the "chance to buy a bottle bar" based on the rating
@@ -392,7 +506,7 @@ public class StartGame extends Activity {
         int nextrating;
         ProgressBar bc = (ProgressBar) findViewById(R.id.bottlechance);
         currentprogress = bc.getProgress();
-        nextrating = guestrating * 5;
+        nextrating = guestrating * 4;
         bc.setProgress(nextrating + currentprogress);
     }
 

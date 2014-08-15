@@ -11,9 +11,10 @@
     <ViewFlipper
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/viewFlipper">
+            android:id="@+id/viewFlipper"
+            >
         <include layout="@layout/forecast"/>
-        <include layout="@layout/stockup" />
-        <include layout="@layout/tastingroom" />
+        <include layout="@layout/stockup"/>
+        <include layout="@layout/tastingroom"/>
     </ViewFlipper>
 </LinearLayout>
