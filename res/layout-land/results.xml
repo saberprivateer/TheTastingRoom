@@ -7,18 +7,18 @@
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:id="@+id/finalimage" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
             android:background="@drawable/winerelax"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="The Tasting Room is closed for the season..."
-            android:id="@+id/textView" android:layout_above="@+id/imageView" android:layout_centerHorizontal="true"/>
+            android:id="@+id/closedforbusiness" android:layout_above="@+id/finalimage" android:layout_centerHorizontal="true"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/congratstext"
-            android:id="@+id/finalresult" android:layout_below="@+id/imageView" android:layout_centerHorizontal="true"/>
+            android:id="@+id/finalresult" android:layout_below="@+id/finalimage" android:layout_centerHorizontal="true"/>
 </RelativeLayout>

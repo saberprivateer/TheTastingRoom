@@ -19,6 +19,7 @@
         <item>30</item>
         <item>20</item>
     </integer-array>
+
     <integer-array name="segmentorder">
         <item>0</item>
         <item>1</item>

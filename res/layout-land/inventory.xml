@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Open Bottles"
-            android:id="@+id/textView"
+            android:id="@+id/openbottles"
             android:textColor="#ffffffff" android:background="@android:drawable/screen_background_dark_transparent"
             android:layout_alignTop="@+id/bottle_qty_header" android:layout_centerHorizontal="true"/>
 </RelativeLayout>

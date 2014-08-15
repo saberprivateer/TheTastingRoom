@@ -90,22 +90,21 @@
     <bookmark url="file://$PROJECT_DIR$/res/layout-land/stockup.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3ddcdf-7383-4588-a481-815640e23ac4" name="UNLK-65 - Complete remaining regions" comment="I'm doing this from intellij">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/redorwhite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/redoverwhite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/whiteoverred.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Guest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/redprogress.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/whiteprogress.xml" />
+    <list default="true" id="fb3ddcdf-7383-4588-a481-815640e23ac4" name="UNLK-65 - Complete remaining regions" comment="fixed some #s and progress bars">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/forecast20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/forecast30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/forecast50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/moneyprogress.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/Data.xml" afterPath="$PROJECT_DIR$/res/values/Data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Forecast.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Forecast.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Guest.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Guest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Stockup.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/Stockup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java" afterPath="$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/forecast.xml" afterPath="$PROJECT_DIR$/res/layout-land/forecast.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/gameframes.xml" afterPath="$PROJECT_DIR$/res/layout-land/gameframes.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/inventory.xml" afterPath="$PROJECT_DIR$/res/layout-land/inventory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/stockup.xml" afterPath="$PROJECT_DIR$/res/layout-land/stockup.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/results.xml" afterPath="$PROJECT_DIR$/res/layout-land/results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/tastingroom.xml" afterPath="$PROJECT_DIR$/res/layout-land/tastingroom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/whiteprogress.xml" afterPath="$PROJECT_DIR$/res/drawable/whiteprogress.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheTastingRoom.iws" />
@@ -131,25 +130,12 @@
     <leaf>
       <file leaf-file-name="gameframes.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout-land/gameframes.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2592592" vertical-offset="0" max-vertical-offset="425">
-              <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gameframescheck.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-land/gameframescheck.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="425">
+              <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -158,8 +144,18 @@
       <file leaf-file-name="Data.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/Data.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-              <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1122">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TastingRoom.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,34 +164,40 @@
       <file leaf-file-name="StartGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.035714" vertical-offset="1278" max-vertical-offset="2907">
-              <caret line="330" column="38" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.60714287" vertical-offset="3026" max-vertical-offset="9418">
+              <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#invinit#0;class#StartGame#0" expanded="false" />
-                <element signature="method#stockinit#0;class#StartGame#0" expanded="false" />
-                <element signature="method#priceinit#0;class#StartGame#0" expanded="false" />
-                <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
-                <element signature="method#SeasonForecast#0;class#StartGame#0" expanded="false" />
-                <element signature="method#cww_click#0;class#StartGame#0" expanded="false" />
-                <element signature="method#eww_click#0;class#StartGame#0" expanded="false" />
-                <element signature="method#crw_click#0;class#StartGame#0" expanded="false" />
-                <element signature="method#erw_click#0;class#StartGame#0" expanded="false" />
-                <element signature="method#updatestock#0;class#StartGame#0" expanded="false" />
-                <element signature="method#sellbackstock#0;class#StartGame#0" expanded="false" />
-                <element signature="method#actionbutton#0;class#StartGame#0" expanded="false" />
+                <element signature="e#5441#5442#0" expanded="true" />
+                <element signature="e#5480#5481#0" expanded="true" />
+                <element signature="e#5525#5526#0" expanded="true" />
+                <element signature="e#5564#5565#0" expanded="true" />
                 <element signature="method#endthegame#0;class#StartGame#0" expanded="false" />
-                <element signature="e#6504#6551#0" expanded="true" />
+                <element signature="e#6643#6690#0" expanded="true" />
                 <element signature="method#playagain#0;class#StartGame#0" expanded="false" />
+                <element signature="e#6941#7128#0" expanded="true" />
+                <element signature="e#7109#7110#0" expanded="true" />
+                <element signature="e#7172#7393#0" expanded="true" />
+                <element signature="e#7366#7367#0" expanded="true" />
                 <element signature="method#outofstock#0;class#StartGame#0" expanded="false" />
-                <element signature="method#servewine#0;class#StartGame#0" expanded="false" />
-                <element signature="method#setrb#0;class#StartGame#0" expanded="false" />
-                <element signature="method#resetrating#0;class#StartGame#0" expanded="false" />
-                <element signature="method#openbottle#0;class#StartGame#0" expanded="false" />
-                <element signature="method#getguestrating#0;class#StartGame#0" expanded="false" />
-                <element signature="method#setchance#0;class#StartGame#0" expanded="false" />
-                <element signature="method#onBackPressed#0;class#StartGame#0" expanded="false" />
+                <element signature="e#8249#8440#0" expanded="true" />
+                <element signature="e#8421#8422#0" expanded="true" />
+                <element signature="e#14441#14788#0" expanded="true" />
+                <element signature="e#14769#14770#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inventory.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout-land/inventory.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2516">
+              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -213,47 +215,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inventory.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-land/inventory.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2516">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="whiteprogress.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/drawable/whiteprogress.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redprogress.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/drawable/redprogress.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7020649" vertical-offset="0" max-vertical-offset="678">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tastingroom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout-land/tastingroom.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1751">
+            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1768">
               <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout-land/results.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameframescheck.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout-land/gameframescheck.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -309,28 +304,30 @@
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/justfunction" />
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/Inventory.java" />
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/Forecast.java" />
-        <option value="$PROJECT_DIR$/res/layout-land/results.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/Stockup.java" />
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/Guest.java" />
-        <option value="$PROJECT_DIR$/res/values/Data.xml" />
         <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java" />
         <option value="$PROJECT_DIR$/res/layout-land/gameframes.xml" />
         <option value="$PROJECT_DIR$/res/layout-land/gameframescheck.xml" />
-        <option value="$PROJECT_DIR$/res/layout-land/forecast.xml" />
         <option value="$PROJECT_DIR$/res/layout-land/stockup.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" />
-        <option value="$PROJECT_DIR$/res/layout-land/tastingroom.xml" />
-        <option value="$PROJECT_DIR$/res/drawable/whiteprogress.xml" />
         <option value="$PROJECT_DIR$/res/drawable/redprogress.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/moneyprogress.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/whiteprogress.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land/tastingroom.xml" />
+        <option value="$PROJECT_DIR$/res/values/Data.xml" />
         <option value="$PROJECT_DIR$/res/layout-land/inventory.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land/forecast.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land/results.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="width" value="1598" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -806,7 +803,11 @@
       <created>1408081483168</created>
       <updated>1408081483168</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed some #s and progress bars">
+      <created>1408085027792</created>
+      <updated>1408085027792</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -830,14 +831,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1598" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47187927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3240078" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3240078" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751676" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -847,15 +848,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46442953" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17110874" sideWeight="0.50047845" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.303155" sideWeight="0.49967846" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35116598" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35033557" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2088484" sideWeight="0.49952152" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14814815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2062982" sideWeight="0.49952152" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.147651" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -895,11 +896,12 @@
     <MESSAGE value="so many game loops" />
     <MESSAGE value="FULL GAME LOOP COMPLETE!" />
     <MESSAGE value="adding some fidelity" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding some fidelity" />
+    <MESSAGE value="fixed some #s and progress bars" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some #s and progress bars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -974,17 +976,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout-land/tastingroom.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-land/forecast.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1065,29 +1056,22 @@
           <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#invinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#stockinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#priceinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#SeasonForecast#0;class#StartGame#0" expanded="false" />
-            <element signature="method#cww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#eww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#crw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#erw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#updatestock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#sellbackstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#actionbutton#0;class#StartGame#0" expanded="false" />
+            <element signature="e#5441#5442#0" expanded="true" />
+            <element signature="e#5480#5481#0" expanded="true" />
+            <element signature="e#5525#5526#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
             <element signature="method#endthegame#0;class#StartGame#0" expanded="false" />
-            <element signature="e#6504#6551#0" expanded="true" />
+            <element signature="e#6643#6690#0" expanded="true" />
             <element signature="method#playagain#0;class#StartGame#0" expanded="false" />
+            <element signature="e#6941#7128#0" expanded="true" />
+            <element signature="e#7109#7110#0" expanded="true" />
+            <element signature="e#7172#7393#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
             <element signature="method#outofstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#servewine#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setrb#0;class#StartGame#0" expanded="false" />
-            <element signature="method#resetrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#openbottle#0;class#StartGame#0" expanded="false" />
-            <element signature="method#getguestrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setchance#0;class#StartGame#0" expanded="false" />
-            <element signature="method#onBackPressed#0;class#StartGame#0" expanded="false" />
+            <element signature="e#8249#8440#0" expanded="true" />
+            <element signature="e#8421#8422#0" expanded="true" />
+            <element signature="e#14441#14788#0" expanded="true" />
+            <element signature="e#14769#14770#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1172,29 +1156,22 @@
           <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#invinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#stockinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#priceinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#SeasonForecast#0;class#StartGame#0" expanded="false" />
-            <element signature="method#cww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#eww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#crw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#erw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#updatestock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#sellbackstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#actionbutton#0;class#StartGame#0" expanded="false" />
+            <element signature="e#5441#5442#0" expanded="true" />
+            <element signature="e#5480#5481#0" expanded="true" />
+            <element signature="e#5525#5526#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
             <element signature="method#endthegame#0;class#StartGame#0" expanded="false" />
-            <element signature="e#6504#6551#0" expanded="true" />
+            <element signature="e#6643#6690#0" expanded="true" />
             <element signature="method#playagain#0;class#StartGame#0" expanded="false" />
+            <element signature="e#6941#7128#0" expanded="true" />
+            <element signature="e#7109#7110#0" expanded="true" />
+            <element signature="e#7172#7393#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
             <element signature="method#outofstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#servewine#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setrb#0;class#StartGame#0" expanded="false" />
-            <element signature="method#resetrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#openbottle#0;class#StartGame#0" expanded="false" />
-            <element signature="method#getguestrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setchance#0;class#StartGame#0" expanded="false" />
-            <element signature="method#onBackPressed#0;class#StartGame#0" expanded="false" />
+            <element signature="e#8249#8440#0" expanded="true" />
+            <element signature="e#8421#8422#0" expanded="true" />
+            <element signature="e#14441#14788#0" expanded="true" />
+            <element signature="e#14769#14770#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1312,17 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-land/results.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
@@ -1365,6 +1331,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/redprogress.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/moneyprogress.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/whiteprogress.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/TastingRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -1374,23 +1364,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-land/gameframes.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2592592" vertical-offset="0" max-vertical-offset="425">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="425">
           <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-land/forecast.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout-land/results.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2261">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1406,10 +1396,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/Data.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+    <entry file="file://$PROJECT_DIR$/res/layout-land/forecast.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2261">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land/tastingroom.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1734">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1425,55 +1429,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/Data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TheTastingRoom/StartGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.035714" vertical-offset="1278" max-vertical-offset="2907">
-          <caret line="330" column="38" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
+        <state vertical-scroll-proportion="-0.60714287" vertical-offset="3026" max-vertical-offset="9418">
+          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#invinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#stockinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#priceinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#forecastinit#0;class#StartGame#0" expanded="false" />
-            <element signature="method#SeasonForecast#0;class#StartGame#0" expanded="false" />
-            <element signature="method#cww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#eww_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#crw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#erw_click#0;class#StartGame#0" expanded="false" />
-            <element signature="method#updatestock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#sellbackstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#actionbutton#0;class#StartGame#0" expanded="false" />
+            <element signature="e#5441#5442#0" expanded="true" />
+            <element signature="e#5480#5481#0" expanded="true" />
+            <element signature="e#5525#5526#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
             <element signature="method#endthegame#0;class#StartGame#0" expanded="false" />
-            <element signature="e#6504#6551#0" expanded="true" />
+            <element signature="e#6643#6690#0" expanded="true" />
             <element signature="method#playagain#0;class#StartGame#0" expanded="false" />
+            <element signature="e#6941#7128#0" expanded="true" />
+            <element signature="e#7109#7110#0" expanded="true" />
+            <element signature="e#7172#7393#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
             <element signature="method#outofstock#0;class#StartGame#0" expanded="false" />
-            <element signature="method#servewine#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setrb#0;class#StartGame#0" expanded="false" />
-            <element signature="method#resetrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#openbottle#0;class#StartGame#0" expanded="false" />
-            <element signature="method#getguestrating#0;class#StartGame#0" expanded="false" />
-            <element signature="method#setchance#0;class#StartGame#0" expanded="false" />
-            <element signature="method#onBackPressed#0;class#StartGame#0" expanded="false" />
+            <element signature="e#8249#8440#0" expanded="true" />
+            <element signature="e#8421#8422#0" expanded="true" />
+            <element signature="e#14441#14788#0" expanded="true" />
+            <element signature="e#14769#14770#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-land/tastingroom.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1734">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/whiteprogress.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,14 +1470,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1938">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/redprogress.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7020649" vertical-offset="0" max-vertical-offset="678">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding />
         </state>
       </provider>

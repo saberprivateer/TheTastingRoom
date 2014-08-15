@@ -12,7 +12,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Click a wine to serve it to your guest!"
-                android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                android:id="@+id/howtoserve" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
                 android:background="@android:drawable/screen_background_dark_transparent" android:textSize="24dp"
                 android:gravity="center_horizontal"/>
     </RelativeLayout>
@@ -92,7 +92,8 @@
                 android:layout_alignStart="@+id/segmentpictr" android:layout_alignLeft="@+id/segmentpictr"
                 android:layout_alignRight="@+id/segmentpictr" android:layout_below="@+id/segmentpictr"
                 android:layout_marginTop="15dp" android:indeterminate="false"
-                />
+                android:progressDrawable="@drawable/moneyprogress"
+                android:progress="77"/>
     </RelativeLayout>
 </LinearLayout>
     </merge>

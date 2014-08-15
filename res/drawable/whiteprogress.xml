@@ -20,9 +20,11 @@
             <shape>
                 <corners android:radius="25dip" />
                 <gradient
-                        android:angle="0"
+
                         android:endColor="#fffffed4"
-                        android:startColor="#fffff106" />
+                        android:startColor="#fffff106"
+                        android:angle="45"
+                        />
             </shape>
         </clip>
     </item>

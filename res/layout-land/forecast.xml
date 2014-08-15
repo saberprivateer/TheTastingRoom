@@ -57,10 +57,10 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent">
                         <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
                                 android:id="@+id/forecast1"
-                                android:src="@drawable/wood_arrow_progressive"
+                                android:src="@drawable/forecast50"
                                 android:layout_above="@+id/segment1name" android:layout_alignParentEnd="true"
                                 android:background="@android:drawable/screen_background_dark_transparent"/>
                         <TextView
@@ -75,7 +75,7 @@
                         <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="30dp"
-                                android:id="@+id/imageView2" android:layout_alignParentTop="true"
+                                android:id="@+id/winepref1" android:layout_alignParentTop="true"
                                 android:layout_alignParentEnd="true" android:background="@drawable/redoverwhite"/>
                     </RelativeLayout>
                 </LinearLayout>
@@ -85,8 +85,8 @@
                     <RelativeLayout
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent">
-                        <ImageView android:layout_width="50dp" android:layout_height="50dp"
-                                   android:id="@+id/forecast2" android:src="@drawable/wood_arrow_progressive"
+                        <ImageView android:layout_width="40dp" android:layout_height="30dp"
+                                   android:id="@+id/forecast2" android:src="@drawable/forecast30"
                                    android:layout_above="@+id/segment2name" android:layout_alignParentEnd="true"
                                    android:background="@android:drawable/screen_background_dark_transparent"/>
                         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                         <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="30dp"
-                                android:id="@+id/imageView" android:layout_alignParentTop="true"
+                                android:id="@+id/winepref2" android:layout_alignParentTop="true"
                                 android:layout_alignParentEnd="true" android:background="@drawable/redorwhite"/>
                     </RelativeLayout>
                 </LinearLayout>
@@ -110,12 +110,12 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent" android:background="@drawable/bachaloretteparty"
                             >
-                        <ImageView android:layout_width="50dp" android:layout_height="50dp"
-                                   android:id="@+id/forecast3" android:src="@drawable/wood_arrow_progressive"
+                        <ImageView android:layout_width="40dp" android:layout_height="30dp"
+                                   android:id="@+id/forecast3" android:src="@drawable/forecast20"
                                    android:layout_above="@+id/segment3name" android:layout_alignParentEnd="true"
                                    android:background="@android:drawable/screen_background_dark_transparent"/>
                         <ImageView android:layout_width="40dp" android:layout_height="30dp"
-                                   android:id="@+id/segment3wine1" android:background="@drawable/whiteoverred"
+                                   android:id="@+id/winepref3" android:background="@drawable/whiteoverred"
                                    android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
                                    android:layout_alignParentRight="true"/>
                         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
