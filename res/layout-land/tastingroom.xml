@@ -26,27 +26,27 @@
                 android:layout_columnSpan="4" android:layout_rowSpan="4"
                 android:layout_marginLeft="20dp" android:layout_marginTop="20dp"/>
         <ImageView
-                android:layout_width="50dp"
+                android:layout_width="40dp"
                 android:layout_height="30dp"
                 android:id="@+id/winepref1" android:layout_row="0" android:layout_column="1"
                 android:src="@drawable/whitewineblack" android:layout_alignParentTop="false"
                 android:layout_toRightOf="@+id/segmentpictr" android:layout_alignTop="@+id/segmentpictr"
                 android:layout_marginLeft="10dp"/>
         <ImageView
-                android:layout_width="50dp"
+                android:layout_width="40dp"
                 android:layout_height="30dp"
                 android:id="@+id/winepref2" android:layout_row="1" android:layout_column="2"
                 android:layout_below="@+id/winepref1"
                 android:layout_alignLeft="@+id/winepref1" android:layout_marginTop="10dp"
-                android:src="@drawable/whitewineblack"/>
-        <ImageView android:layout_width="50dp" android:layout_height="30dp" android:id="@+id/winepref3"
+                />
+        <ImageView android:layout_width="40dp" android:layout_height="30dp" android:id="@+id/winepref3"
                    android:layout_row="1" android:layout_column="2"
                    android:layout_alignLeft="@+id/winepref1" android:layout_below="@+id/winepref2"
-                   android:layout_marginTop="10dp" android:src="@drawable/whitewineblack"/>
-        <ImageView android:layout_width="50dp" android:layout_height="30dp" android:id="@+id/winepref4"
+                   android:layout_marginTop="10dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="30dp" android:id="@+id/winepref4"
                    android:layout_row="1" android:layout_column="2"
                    android:layout_alignLeft="@+id/winepref1" android:layout_below="@+id/winepref3"
-                   android:layout_marginTop="10dp" android:src="@drawable/whitewineblack"/>
+                   android:layout_marginTop="10dp" android:src="@drawable/redwineblack"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,7 +55,8 @@
                 android:id="@+id/segmentnametr"
                 android:layout_alignStart="@+id/segmentpictr" android:layout_alignBottom="@+id/segmentpictr"
                 android:layout_alignLeft="@+id/segmentpictr" android:layout_alignRight="@+id/segmentpictr"
-                android:gravity="center" android:background="@android:drawable/screen_background_dark_transparent"/>
+                android:gravity="center" android:background="@android:drawable/screen_background_dark_transparent"
+                android:textSize="12dp"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/w1rating" android:layout_alignTop="@+id/winepref1"
                 android:layout_toRightOf="@+id/winepref1" android:layout_marginLeft="20dp"
-                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator" android:rating="0"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
                 android:numStars="5"/>
         <RatingBar style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/w2rating"
@@ -93,7 +94,14 @@
                 android:layout_alignRight="@+id/segmentpictr" android:layout_below="@+id/segmentpictr"
                 android:layout_marginTop="15dp" android:indeterminate="false"
                 android:progressDrawable="@drawable/moneyprogress"
-                android:progress="77"/>
+                android:progress="0" android:secondaryProgress="0"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/initialroll" android:layout_alignBottom="@+id/budget"
+                android:layout_alignStart="@+id/w4rating"/>
     </RelativeLayout>
 </LinearLayout>
     </merge>

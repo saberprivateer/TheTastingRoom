@@ -5,6 +5,7 @@
     <string name="cheapwhitewine">cheap white wine</string>
     <string name="Forecast2Stock">Stock up on wine...</string>
     <string name="congratstext">Congrats! You ended the season with $</string>
+    <string name="numvisitors">Expected # of visitors this season: 3</string>
     <string-array name="segments">
         <item>Young Couple</item>
         <item>Retired Couple</item>
@@ -13,7 +14,7 @@
     <string-array name="segmentimgs">
         <item>@drawable/youngcouple</item>
         <item>@drawable/retiredcouple</item>
-        <item>@drawable/bachaloretteparty</item>
+        <item>@drawable/bacheloretteparty</item>
     </string-array>
     <string-array name="wines">
         <item>Chardonnay</item>

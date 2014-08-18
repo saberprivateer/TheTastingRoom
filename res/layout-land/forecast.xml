@@ -18,6 +18,11 @@
                     android:textStyle="italic"
                     android:textColor="#ffffffff" android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/numvisitors" android:id="@+id/numvisitors"
+                      android:background="@android:drawable/screen_background_dark_transparent" android:textSize="20dp"
+                      android:textColor="#ffffffff"
+                      android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
         </RelativeLayout>
         <LinearLayout
                 android:orientation="vertical"
@@ -105,10 +110,10 @@
                 </LinearLayout>
                 <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
                               android:layout_height="fill_parent" android:layout_weight="1" android:id="@+id/llseg3"
-                              android:background="@drawable/bachaloretteparty">
+                              android:background="@drawable/bacheloretteparty">
                     <RelativeLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="fill_parent" android:background="@drawable/bachaloretteparty"
+                            android:layout_height="fill_parent" android:background="@drawable/bacheloretteparty"
                             >
                         <ImageView android:layout_width="40dp" android:layout_height="30dp"
                                    android:id="@+id/forecast3" android:src="@drawable/forecast20"

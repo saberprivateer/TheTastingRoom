@@ -34,9 +34,9 @@
     </integer-array>
 
     <integer-array name="seg1pref">
-        <item>4</item>
-        <item>5</item>
         <item>3</item>
+        <item>5</item>
+        <item>4</item>
         <item>5</item>
     </integer-array>
     <integer-array name="seg2pref">
@@ -46,9 +46,9 @@
         <item>5</item>
     </integer-array>
     <integer-array name="seg3pref">
-        <item>3</item>
-        <item>5</item>
         <item>4</item>
+        <item>5</item>
+        <item>3</item>
         <item>5</item>
     </integer-array>
 
